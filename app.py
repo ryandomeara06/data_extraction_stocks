@@ -65,8 +65,8 @@ if st.sidebar.button("Get Data"):
     #  create download button for CSV
 
   st.download_button(
-      label = "Download Data as CSV"
-      data = csv
-      file_name = f"{ticker}_stock_data.csv"
+      label = "Download Data as CSV",
+      data = csv,
+      file_name = f"{ticker}_stock_data.csv",
       mime = "text/csv"
   )
