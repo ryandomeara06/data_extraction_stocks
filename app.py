@@ -22,7 +22,7 @@ end_date = st.sidebar.date_input("End Date", pd.to_datetime("today"))
 if st.sidebar.button("Get Data"):
 
   # create ticker object 
-  stock = yf.ticker(ticker)
+  stock = yf.Ticker(ticker)
 
   #  download historical prices 
   df = stock.history(start = start_date, end = end_date)
